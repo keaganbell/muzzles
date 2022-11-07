@@ -5,5 +5,10 @@
 
 int main()
 {
-	Log("Hello World");
+	uint16_t n = 16;
+
+	std::ofstream myfile;
+	myfile.open("AdjacentSquares.txt");
+	myfile << "Adjacent squares list with a limit of "<< n << ":" << std::endl;
+	myfile.close();
 }
